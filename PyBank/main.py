@@ -5,25 +5,25 @@ import csv
 budget_csv = os.path.join("Resources", "budget_data.csv")
 
 #variables
-total_months = []
+total_month_count = 0
 total_revenue = [] 
 average_change = 0
 
 #open csv file and read data
-with open(budget_csv, newline = "") as csv_file:
-    reader = csv.reader(csv_file)
-    remove_header = next(csv_file)
+with open(budget_csv, newline = "") as budget_file:
+    reader = csv.reader(budget_file)
+    header = next(reader)
     #NEED to store header row too
     
     for row in reader:
         total_revenue.append(row[1])
-        total_months.append(row[0])
+        total_month_count = total_month_count + 1
 
     greatest_increase = max(total_revenue)
     greatest_decrease = min(total_revenue)
 
 
-print(f'{len(total_months)-1}') # i think this is pulling a "" value and counting 1 extra cell, using -1 to get the correct number
+print(f'{len(total_month_count)-1}') # i think this is pulling a "" value and counting 1 extra cell, using -1 to get the correct number
 print(f'{total_revenue}')
 print(f'{greatest_increase} and no') #pulling 99,841 as largest, should be 1,141,840
 print(f'{greatest_decrease} and yes') #pulling 0 or blank as smallest 
