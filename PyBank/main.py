@@ -1,11 +1,11 @@
 import os
 import csv
 
-#Set path for csv file
+#Set path for files
 BUDGET_CSV_PATH = os.path.join("Resources", "budget_data.csv")
 SAVE_PATH = os.path.join("Analysis", "budget_data.txt")
 
-#path from tutor - Kourt
+#Path from tutor - Kourt
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 #Set my variables to 0 
