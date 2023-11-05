@@ -51,12 +51,12 @@ with open(BUDGET_CSV_PATH) as budget_file:
 
 #Create variable to print all data
 
-data_to_print =(f'Financial Analysis'
-f'\n----------------------------------'
-f'\nTotal Months: {total_month_count}'
-f'\nTotal: ${total_profit}'
-f'\nAverage Change: ${sum(monthly_change) / len(monthly_change)}'
-f'\nGreatest Increase in Profits:{month_list[monthly_change.index(max(monthly_change))+1]} $({great_increase})'
+data_to_print =(f'Financial Analysis\n'
+f'\n----------------------------------\n'
+f'\nTotal Months: {total_month_count}\n'
+f'\nTotal: ${total_profit}\n'
+f'\nAverage Change: ${sum(monthly_change) / len(monthly_change):.2f}\n'
+f'\nGreatest Increase in Profits:{month_list[monthly_change.index(max(monthly_change))+1]} $({great_increase})\n'
 f'\nGreatest Decrease in Profits:{month_list[monthly_change.index(min(monthly_change))+1]} $({great_decrease})')
 
 print(data_to_print)
