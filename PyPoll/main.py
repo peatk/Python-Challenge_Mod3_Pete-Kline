@@ -15,8 +15,8 @@ candidate_vote_count = {}
 
 #set winning variables
 #winner = ""
-#winner_count = 0
-#winner_percentage = 0 
+winner_count = 0
+winner_percentage = 0 
 
 
 with open(election_csv, newline = "") as election_file:
@@ -40,16 +40,28 @@ with open(election_csv, newline = "") as election_file:
 
         candidate_vote_count[candidate_name] += 1 
 
-for x in candidate_vote_count:
-    
-    candidate_percent = (candidate_vote_count[x]/ total_votes)*100
-   
-
-
 print(f'{total_votes}') 
 print(f'{candidate_list}')
 print(f'{candidate_vote_count}')
-print(f'{x} {candidate_percent}')
+
+for each_candidate in candidate_vote_count:
+    candidate_percent = (candidate_vote_count[each_candidate]/ total_votes)*100
+    candidate_vote = (candidate_vote_count[each_candidate])
+    print(f'{each_candidate} {candidate_percent}')
+    print(f'{candidate_vote}')
+
+
+
+
+#candidate_vote = candidate_vote_count.get(candidate_name)
+
+#print(candidate_vote)
+
+
+#max(candidate_percent)
+#if each_candidate == winner:
+#print(winner)
+
 
 
 #1 - The total number of votes cast - DONE
@@ -58,7 +70,7 @@ print(f'{x} {candidate_percent}')
 
 #3 - The percentage of votes each candidate won - DONE
  
-#4 - The total number of votes each candidate won- DONE, prints with candidate list
+#4 - The total number of votes each candidate won- DONE
 
 #5 - The winner of the election based on popular vote - if statement to compare - and use find max vote
 
