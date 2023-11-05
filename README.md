@@ -1,39 +1,39 @@
 # Python-Challenge_Mod3_Pete-Kline
-Mod3 - Python Challenge homework for UCB Data Analytics
+<h3>Mod3 - Python Challenge homework for UCB Data Analytics
 
-It's time to put away the Excel sheet and enter the world of programming with Python. In this assignment, you'll use the concepts you've learned to complete two Python challenges, PyBank and PyPoll. Both tasks present a real-world situation where your newly developed Python scripting skills come in handy.
+<h4>PyBank Instructions
 
-PyBank Instructions
-    In this Challenge, you are tasked with creating a Python script to analyze the financial records of your company. You will be given a financial dataset called budget_data.csv. The dataset is composed of two columns: "Date" and "Profit/Losses".
+<h6>
+In this Challenge, I was tasked with creating a Python script to analyze the financial records of your company. I was given a financial dataset called budget_data.csv. The dataset is composed of two columns: "Date" and "Profit/Losses".
 
-    Your task is to create a Python script that analyzes the records to calculate each of the following values:
+My task was to create a Python script that analyzes the records to calculate each of the following values:
 
-    The total number of months included in the dataset
+#1 The total number of months included in the dataset
 
-    The net total amount of "Profit/Losses" over the entire period
+#2 The net total amount of "Profit/Losses" over the entire period
 
-    The changes in "Profit/Losses" over the entire period, and then the average of those changes
+#3 The changes in "Profit/Losses" over the entire period, and then the average of those changes
 
-    The greatest increase in profits (date and amount) over the entire period
+#4 The greatest increase in profits (date and amount) over the entire period
 
-    The greatest decrease in profits (date and amount) over the entire period
+#5 The greatest decrease in profits (date and amount) over the entire period
 
-    In addition, your final script should both print the analysis to the terminal and export a text file with the results.
+#6 Print final script should both print the analysis to the terminal and export a text file with the results.
 
 
-PyPoll Instructions
-    In this Challenge, you are tasked with helping a small, rural town modernize its vote-counting process.
+<h4>PyPoll Instructions
+    
+<h6>
+In this Challenge, I was tasked with helping a small, rural town modernize its vote-counting process. I was given a set of poll data called election_data.csv. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". My task was to create a Python script that analyzes the votes and calculates each of the following values:
 
-    You will be given a set of poll data called election_data.csv. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". Your task is to create a Python script that analyzes the votes and calculates each of the following values:
+#1 The total number of votes cast
 
-    The total number of votes cast
+#2 A complete list of candidates who received votes
 
-    A complete list of candidates who received votes
+#3 The percentage of votes each candidate won
 
-    The percentage of votes each candidate won
+#4 The total number of votes each candidate won
 
-    The total number of votes each candidate won
+#5 The winner of the election based on popular vote
 
-    The winner of the election based on popular vote
-
-    In addition, your final script should both print the analysis to the terminal and export a text file with the results.
+#6 Print final script should both print the analysis to the terminal and export a text file with the results.
