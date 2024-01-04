@@ -1,5 +1,5 @@
-# Python-Challenge_Mod3_Pete-Kline
-<h3>Mod3 - Python Challenge homework for UCB Data Analytics
+#Python Script
+<h3>UC Berkeley: Data Analytics
 
 <h4>PyBank Instructions
 
